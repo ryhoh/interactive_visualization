@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Dataset Visualization</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.6.3/billboard.min.js" integrity="sha512-VwdyerkNUyUams4hzh/xsMJXIa/1S3m5FSMdWBPDs4+Ixscn2SjGeacdEwif8UChI1XoRLVmNq7zH5bABkC4SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.6.3/billboard.min.css" integrity="sha512-G5Mf8ZhVLm+xjXYkMBndi0GYhgg37RPt/IoSxnmC65gBLf5NVyoXa2ORXEBGMZ+xf4SwelssjYpba/ztCOlD8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color:lavender;
+        }
+        .frame {
+            display: inline-block;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 10px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container div {
+            width: calc(50% - 10px);
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <h2>Histgram</h2>
+        <div class="container">
+            <div id="sepal_length_hist"></div>
+            <div id="sepal_width_hist"></div>
+            <div id="petal_length_hist"></div>
+            <div id="petal_width_hist"></div>
+        </div>
+    </div>
+    <div class="frame">
+        <h2>Scatter</h2>
+        <div id="sepal_scatter"></div>
+        <div id="petal_scatter"></div>
+    </div>
+    
+</body>
+</html>
